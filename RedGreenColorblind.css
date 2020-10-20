@@ -1,0 +1,196 @@
+@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
+:root {
+    --red-override: #fa6502;
+    --green-override: #026CCF;
+}
+
+
+.tiles-red,
+.alertingCustomCells-failed,
+.monitoringCustomCells-failed,
+.SoftwareTile-blacklisted td:not(:last-child),
+.AlertsTile-failed,
+.PatchingTile-failed,
+.ThirdPartyPatchingTile-failed,
+.CommandsTile-failed,
+.ServicesTile-failed,
+.MonitorsTile-failed,
+.NetworkProbeTile-failed,
+.ScriptsTile-failed,
+.maxTileAlerts-failed,
+.maxTileCommands-failed,
+.maxTileMonitors-failed,
+.probeCommands-failed,
+.maxTileStorage-failed,
+.needsAttention-red,
+.shared_iconRed__2yYzH{
+    color: var(--red-override) !important;
+    fill: var(--red-override) !important;
+}
+
+.tiles-green,
+.alertingCustomCells-success, 
+.monitoringCustomCells-success,
+.PatchingTile-success,
+.ThirdPartyPatchingTile-success,
+.MonitorsTile-success,
+.NetworkProbeTile-success,
+.ScriptsTile-success,
+.maxTileAlerts-success,
+.maxTileCommands-success,
+.maxTileMonitors-success,
+.probeCommands-success,
+.maxTileStorage-success {
+    color: var(--green-override) !important;
+    fill: var(--green-override) !important;
+}
+
+.OverallComplianceTile-green,
+.BottomPane-deviceStatus.BottomPane-online,
+.ValueWithLabel-value {
+    color: var(--green-override) !important;
+}
+
+.OverallComplianceTile-red, 
+.CwDropdownWithLabel-fieldLabel.CwDropdownWithLabel-error,
+.CwDropdownWithLabel-textFieldMessage.CwDropdownWithLabel-error.agentPushSettings-addCreds,
+.CwTextFieldWithLabel-fieldLabel.CwTextFieldWithLabel-error.agentPushSettings-addCreds,
+.CwTextFieldWithLabel-textFieldMessage.CwTextFieldWithLabel-error,
+.CwTextFieldWithLabel-fieldLabel.CwTextFieldWithLabel-error,
+.CwTextFieldWithLabel-textFieldMessage.CwTextFieldWithLabel-error,
+.CwTextAreaWithLabel-fieldLabel.CwTextAreaWithLabel-error,
+.CwTextAreaWithLabel-textAreaMessage.CwTextAreaWithLabel-error,
+.Overview-invalid,
+.Overview-thresholdFailed,
+.ServicesTile-servicesCountContainer .ServicesTile-number,
+.Dialogs-error,
+.ClientLocationDropdownWithLabel-error,
+.ServicesTile-servicesCountContainer .ServicesTile-number,
+.Overview-invalid,
+.Overview-thresholdFailed,
+.BottomPane-deviceStatus.BottomPane-offline,
+.login-textFieldMessage.login-error {
+    color: var(--red-override) !important;
+}
+
+.ThirdPartyPatchingTile-green, 
+.ThirdPartyPatchesTile-green, 
+.ComplianceByStageTile-green {
+    color: var(--green-override) !important;
+    fill: var(--green-override) !important;
+    stroke: var(--green-override) !important;
+}
+
+.CwFeedback-positive {
+    border-color: var(--green-override) !important; 
+}
+.CwFeedback-positive .CwFeedback-feedbackIcon {
+    fill: var(--green-override) !important; 
+}
+
+.CwDataGrid-success svg, 
+.DeviceFlagsCell-success svg,
+.DeviceFlagsCell-success,
+.StatusGridCell-status.StatusGridCell-true,
+.Header-active,
+.Overview-antiVirusIcon svg,
+.Overview-icon.Overview-online,
+.Header-active,
+.Header-success,
+.Header-active .isvg, .Header-active svg,
+.Header-success .isvg,
+.Header-success svg,
+.Overview-probeAgentIcon svg,
+.Overview-icon.Overview-online,
+.networkProbeWizard-finishDialog svg {
+    fill: var(--green-override) !important;
+}
+
+.CwDataGrid-failed svg, 
+.DeviceFlagsCell-failed svg,
+.DeviceFlagsCell-failed,
+.StatusGridCell-status.StatusGridCell-false,
+.Overview-antiVirusIcon.Overview-failed svg,
+.StorageChart-warning,
+.CwFeedback-error .CwFeedback-feedbackIcon,
+.Dialogs-error .isvg, .Dialogs-error svg,
+.Header-failed,
+.Header-failed .isvg, .Header-failed svg {
+    fill: var(--red-override) !important;
+}
+
+.ComplianceByStageTile-red, 
+.NonCompliantPatchesTile-critical, 
+.NonCompliantPatchesTile-high, 
+.ThirdPartyPatchingTile-red, 
+.ThirdPartyPatchesTile-red, 
+.ApprovedPatchesTile-red{
+    color: var(--red-override) !important;
+    fill: var(--red-override) !important;
+    stroke: var(--red-override) !important;
+}
+
+.CwFeedback-error {
+    border-color: var(--red-override) !important; 
+}
+  
+.PatchingTile-d3PieChartFailed,
+.ThirdPartyPatchingTile-d3PieChartFailed {
+  fill: var(--red-override) !important;
+  stroke: var(--red-override) !important; 
+}
+
+.PatchingTile-d3PieChartSuccess,
+.ThirdPartyPatchingTile-d3PieChartSuccess {
+    fill: var(--green-override) !important;
+    stroke: var(--green-override) !important; 
+}
+.maxTileStorage-failed .CwProgressBar-foreground,
+.Header-computerStatusBar,
+.Header-deviceStatusBar {
+    background-color: var(--red-override) !important; 
+}
+
+.ProgressBar-foreground {
+    background-color: var(--green-override) !important; 
+}
+
+[data-cwid='remote_monitor_failure_and_warnings_content_datapoints_piechart_0_path'][data-path-type='normal'],
+[data-cwid='internal_monitor_disabled_and_detected_datapoints_piechart_0_path'][data-path-type='normal']{
+        fill: var(--red-override) !important;
+}
+
+[data-id='success'][data-path-type='normal'] {
+    fill: var(--green-override) !important;
+    stroke: var(--green-override) !important; 
+}
+[data-id='fail'][data-path-type='normal'] {
+    fill: var(--red-override) !important;
+    stroke: var(--red-override) !important; 
+}
+
+[data-type='node-container'][node-online=false] [node-circle] {
+    stroke: var(--red-override) !important; 
+}
+  
+[data-type='node-container'][node-online=false] [node-image] {
+    fill: var(--red-override) !important; 
+}
+  
+[data-type='node-container'][node-online=false]:hover [node-circle] {
+    stroke: var(--red-override) !important; 
+}  
+
+[data-type='node-container'][node-online=false][data-active=true] [node-circle] {
+    fill: var(--red-override) !important;
+    stroke: var(--red-override) !important; 
+}
+ 
+[parent-online=false] [node-connector-circle] {
+    stroke: var(--red-override) !important; 
+}
+   
+[link-online=false] {
+    stroke: var(--red-override); 
+}
+}
