@@ -1,4 +1,4 @@
-# CW Automate Stylish - Custom Styles for ConnectWise Automate Web Client
+# CW Automate - Custom Styles for ConnectWise Automate Web Client
 
 This is a collection of CSS styles for ConnectWise Automate
 - Red/Green Colorblind: Changes all of the Green to blue and Red to Orange
