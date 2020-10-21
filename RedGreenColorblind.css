@@ -1,3 +1,4 @@
+@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
 :root {
     --red-override: #fa6502;
     --green-override: #026CCF;
@@ -192,4 +193,5 @@
    
 [link-online=false] {
     stroke: var(--red-override); 
+}
 }
