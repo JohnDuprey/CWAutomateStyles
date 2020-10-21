@@ -1,6 +1,6 @@
 @-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
 .CwDataGrid-row .CwDataGrid-disabled svg, 
-.CwDataGrid-row .CwDataGrid-cellImage:not(.CwDataGrid-success):not(.CwDataGrid-failure) svg,
+.CwDataGrid-row .CwDataGrid-cellImage:not(.CwDataGrid-success):not(.CwDataGrid-failed) svg,
 .Header-flagIcon:not(.MasterFlag-disabled) svg,
 .PatchingTile-flagIcon svg, 
 .ScriptsTile-icon svg, 
