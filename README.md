@@ -2,6 +2,7 @@
 
 This is a collection of CSS styles for ConnectWise Automate
 - Red/Green Colorblind: Changes all of the Green to blue and Red to Orange
+- Dark Reader Invert Icons: Inverts the colors of all icons while using Dark Reader
 
 ## Instructions
 1. Install the Stylus extension from the Chrome or Firefox extension marketplace 
