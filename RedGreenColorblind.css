@@ -1,9 +1,7 @@
-@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
 :root {
     --red-override: #fa6502;
     --green-override: #026CCF;
 }
-
 
 .tiles-red,
 .alertingCustomCells-failed,
@@ -84,9 +82,6 @@
 .CwFeedback-positive {
     border-color: var(--green-override) !important; 
 }
-.CwFeedback-positive .CwFeedback-feedbackIcon {
-    fill: var(--green-override) !important; 
-}
 
 .CwDataGrid-success svg, 
 .DeviceFlagsCell-success svg,
@@ -102,7 +97,10 @@
 .Header-success svg,
 .Overview-probeAgentIcon svg,
 .Overview-icon.Overview-online,
-.networkProbeWizard-finishDialog svg {
+.networkProbeWizard-finishDialog svg,
+.CwFeedback-positive .CwFeedback-feedbackIcon,
+.SsoStatusCell-enabled,
+.LockoutStatusCell-notLocked {
     fill: var(--green-override) !important;
 }
 
@@ -115,7 +113,9 @@
 .CwFeedback-error .CwFeedback-feedbackIcon,
 .Dialogs-error .isvg, .Dialogs-error svg,
 .Header-failed,
-.Header-failed .isvg, .Header-failed svg {
+.Header-failed .isvg, .Header-failed svg,
+.SsoStatusCell-disabled,
+.LockoutStatusCell-locked {
     fill: var(--red-override) !important;
 }
 
@@ -192,5 +192,4 @@
    
 [link-online=false] {
     stroke: var(--red-override); 
-}
 }
