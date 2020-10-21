@@ -1,0 +1,16 @@
+@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
+.CwDataGrid-row .CwDataGrid-disabled svg, 
+.CwDataGrid-row .CwDataGrid-cellImage:not(.CwDataGrid-success):not(.CwDataGrid-failure) svg,
+.Header-flagIcon:not(.MasterFlag-disabled) svg,
+.PatchingTile-flagIcon svg, 
+.ScriptsTile-icon svg, 
+.tiles-flagsContainer svg, 
+.RequiresApprovalTile-flagsContainer svg {
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+          filter: invert(100%);
+}
+
+.maxTileCommands-resultPaneBody label {
+    white-space: pre-wrap;
+}
+}
