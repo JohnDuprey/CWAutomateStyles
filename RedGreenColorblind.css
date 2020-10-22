@@ -1,4 +1,4 @@
-@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
+@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod|App_Extensions)).*") {
 :root {
     --red-override: #fa6502;
     --green-override: #026CCF;
@@ -22,7 +22,8 @@
 .probeCommands-failed,
 .maxTileStorage-failed,
 .needsAttention-red,
-.shared_iconRed__2yYzH{
+.shared_iconRed__2yYzH,
+.offlineProbes-failed {
     color: var(--red-override) !important;
     fill: var(--red-override) !important;
 }
@@ -39,14 +40,17 @@
 .maxTileCommands-success,
 .maxTileMonitors-success,
 .probeCommands-success,
-.maxTileStorage-success {
+.maxTileStorage-success,
+.shared_iconGreen__2WanP,
+.offlineProbes-success {
     color: var(--green-override) !important;
     fill: var(--green-override) !important;
 }
 
 .OverallComplianceTile-green,
 .BottomPane-deviceStatus.BottomPane-online,
-.ValueWithLabel-value {
+.scripts-success,
+.ownerValue-success {
     color: var(--green-override) !important;
 }
 
@@ -68,7 +72,10 @@
 .Overview-invalid,
 .Overview-thresholdFailed,
 .BottomPane-deviceStatus.BottomPane-offline,
-.login-textFieldMessage.login-error {
+.login-textFieldMessage.login-error,
+.activeAlertCounts-critical,
+.scripts-red,
+.ComplianceCell-red {
     color: var(--red-override) !important;
 }
 
@@ -101,7 +108,8 @@
 .networkProbeWizard-finishDialog svg,
 .CwFeedback-positive .CwFeedback-feedbackIcon,
 .SsoStatusCell-enabled,
-.LockoutStatusCell-notLocked {
+.LockoutStatusCell-notLocked,
+.ComplianceCell-green {
     fill: var(--green-override) !important;
 }
 
@@ -116,7 +124,8 @@
 .Header-failed,
 .Header-failed .isvg, .Header-failed svg,
 .SsoStatusCell-disabled,
-.LockoutStatusCell-locked {
+.LockoutStatusCell-locked,
+.ComplianceCell-red {
     fill: var(--red-override) !important;
 }
 
@@ -154,6 +163,15 @@
 
 .ProgressBar-foreground {
     background-color: var(--green-override) !important; 
+}
+
+[data-cwid='patching_overall_compliance_pod_datapoint_1_value'] {
+    color: var(--green-override) !important;
+}
+
+[data-cwid='remote_monitor_failure_and_warnings_content_datapoints_datapoint_0_value'],
+[data-cwid='internal_monitor_disabled_and_detected_datapoints_datapoint_0_value']{
+    color: var(--red-override) !important;
 }
 
 [data-cwid='remote_monitor_failure_and_warnings_content_datapoints_piechart_0_path'][data-path-type='normal'],
