@@ -5,7 +5,10 @@
 .PatchingTile-flagIcon svg, 
 .ScriptsTile-icon svg, 
 .tiles-flagsContainer svg, 
-.RequiresApprovalTile-flagsContainer svg {
+.RequiresApprovalTile-flagsContainer svg,
+.ServicesTile-iconCell svg,
+.CommandsTile-icon svg,
+.MonitorsTile-icon svg {
   -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
           filter: invert(100%);
 }
