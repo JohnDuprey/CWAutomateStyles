@@ -1,3 +1,4 @@
+@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
 /* show script logs with whitespace */
 .maxTileScripts-logItem,
 .maxTileCommands-resultPaneBody,
@@ -20,4 +21,6 @@
 .maxTileCommands-resultPaneBody label,
 .maxTileScripts-logsTabContainer label {
     font-family: Roboto Mono, monospace !important;
+}
+
 }
