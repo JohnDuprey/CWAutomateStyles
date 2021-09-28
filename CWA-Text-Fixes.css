@@ -1,0 +1,23 @@
+/* show script logs with whitespace */
+.maxTileScripts-logItem,
+.maxTileCommands-resultPaneBody,
+.CwFeedback-feedback label {
+    white-space: pre-wrap !important;   
+}
+
+/* Computer overview section, hide text that spills over the div unless hovering */
+.Overview-group {
+    text-overflow: ellipsis;
+}
+
+/* Default overflow for overview group */
+.Overview-group:hover {
+    overflow:visible;
+    overflow-wrap: break-word;
+}
+
+/* Set font to Roboto Mono for command and script output */
+.maxTileCommands-resultPaneBody label,
+.maxTileScripts-logsTabContainer label {
+    font-family: Roboto Mono, monospace !important;
+}
