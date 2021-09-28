@@ -3,6 +3,7 @@
 This is a collection of CSS styles for ConnectWise Automate
 - Red/Green Colorblind: Changes all of the Green to blue and Red to Orange
 - Dark Reader Invert Icons: Inverts the colors of all icons while using [Dark Reader](https://darkreader.org/)
+- Text fixes for CW Automate Web, force script logs to be pre-wrap, add ellipsis for long text fields in overview with overflow wrap on hover, and use Roboto Mono font for command output
 
 ## Instructions
 1. Install the Stylus extension for Chrome/Firefox/Opera
