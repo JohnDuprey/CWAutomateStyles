@@ -1,0 +1,5 @@
+@-moz-document regexp("(?=.*?\\/(automate|dashboard-pod)).*") {
+.layout-loader {
+    display: none !important;
+}
+}
