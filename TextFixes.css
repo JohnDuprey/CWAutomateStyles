@@ -19,8 +19,13 @@
 
 /* Set font to Roboto Mono for command and script output */
 .maxTileCommands-resultPaneBody label,
-.maxTileScripts-logsTabContainer label {
+.maxTileCommands-group label,
+.maxTileScripts-logItem {
     font-family: Roboto Mono, monospace !important;
+    font-size: 12px !important;
+    margin-top: 3px !important;
+    overflow-wrap: break-word;
+    overflow: visible;
 }
 
 }
