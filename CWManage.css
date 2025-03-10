@@ -1,0 +1,21 @@
+@-moz-document regexp("yourcwserver.com") {
+    svg,
+    .cwsvg svg {
+          fill: white;
+    }
+    
+    .mm_icon {
+        fill: white;
+    }
+    
+    a.boldMultilineClickable, a.boldMultilineClickable:hover, a.boldMultilineClickable:visited {
+        font-weight: bold;
+        white-space: pre;
+        color: black !important;
+        background-color: yellow;
+    }
+    
+    .walkme-player { 
+        display: none !important; 
+    }
+}
